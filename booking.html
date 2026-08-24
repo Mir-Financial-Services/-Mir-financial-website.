@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Consultation | Mir Financial Services</title>
+<meta name="description" content="Book a free consultation with Mir Financial Services. We offer accounting, tax preparation, bookkeeping, and financial planning services in Ottawa.">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .booking-hero {
+    background: var(--navy);
+    color: #fff;
+    padding: 64px 24px 48px;
+    text-align: center;
+  }
+  .booking-hero .hero-eyebrow { color: var(--gold-light); text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.78rem; font-weight: 600; margin-bottom: 14px; }
+  .booking-hero h1 { color: #fff; font-size: clamp(1.7rem, 4vw, 2.5rem); margin: 0 auto 12px; max-width: 620px; }
+  .booking-hero p { color: #cdd4e0; font-size: 1.05rem; max-width: 520px; margin: 0 auto; }
+
+  .booking-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+
+  .booking-frame-wrapper {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 32px rgba(20,33,61,0.10);
+    border: 1px solid var(--border);
+    background: #fff;
+    min-height: 700px;
+  }
+
+  .booking-frame-wrapper iframe {
+    display: block;
+    width: 100%;
+    height: 780px;
+    border: none;
+  }
+
+  .booking-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .booking-info-card {
+    background: var(--cream);
+    border-radius: 6px;
+    padding: 20px 22px;
+    border: 1px solid var(--border);
+  }
+
+  .booking-info-card .label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--gold);
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+
+  .booking-info-card p {
+    margin: 0;
+    font-size: 0.92rem;
+    color: var(--ink);
+  }
+
+  @media (max-width: 600px) {
+    .booking-frame-wrapper iframe { height: 900px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a class="logo" href="index.html">MIR <span>Financial</span> Services</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#services">Services</a></li>
+      <li><a href="blog/index.html">Blog</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="booking.html">Book a Call</a>
+  </nav>
+</header>
+
+<section class="booking-hero">
+  <div class="hero-eyebrow">Free Consultation</div>
+  <h1>Book Your Strategy Session</h1>
+  <p>Pick a time that works for you. We'll review your situation and show you exactly where we can help.</p>
+</section>
+
+<div class="booking-wrap">
+  <div class="booking-frame-wrapper">
+    <iframe
+      src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3kpP1yC0bZlJkIfJHmdWjQosG5RP_n5NrXsrTS2hIfyGEXPTPP0nLay6UTP_W-uiwHoX52NFes"
+      title="Book an appointment with Mir Financial Services"
+      frameborder="0"
+      scrolling="yes"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="booking-info">
+    <div class="booking-info-card">
+      <div class="label">What to expect</div>
+      <p>A focused conversation about your finances, tax situation, or business needs — no obligation.</p>
+    </div>
+    <div class="booking-info-card">
+      <div class="label">Duration</div>
+      <p>30 minutes via phone or video call, at a time that suits you.</p>
+    </div>
+    <div class="booking-info-card">
+      <div class="label">Prefer to call?</div>
+      <p><a href="tel:+16137967030" style="color:var(--gold);font-weight:600;">+1 (613) 796-7030</a><br>or email <a href="mailto:Info@mirfinancialservices.com" style="color:var(--gold);font-weight:600;">Info@mirfinancialservices.com</a></p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <strong>MIR Financial Services</strong><br>
+      Based in Ottawa, Ontario, MIR Financial Services offers expert financial solutions tailored to Canadian businesses and individuals.
+    </div>
+    <ul class="footer-links">
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="terms-conditions.html">Terms &amp; Conditions</a></li>
+      <li><a href="blog/index.html">Blog</a></li>
+    </ul>
+  </div>
+  <div class="footer-bottom wrap">
+    &copy; <span id="year"></span> MIR Financial Services. All rights reserved.
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
