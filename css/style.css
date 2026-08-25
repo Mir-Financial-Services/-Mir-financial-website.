@@ -344,6 +344,35 @@ footer a:hover { color: var(--gold-light); }
   color: #fff;
 }
 
+/* Reviews Carousel */
+.reviews-carousel { position: relative; }
+.reviews-group {
+  display: none;
+  animation: fadeIn 0.6s ease;
+}
+.reviews-group.active { display: block; }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.reviews-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 28px;
+}
+.reviews-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background: var(--border);
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s;
+}
+.reviews-dot.active { background: var(--gold); }
+
 /* Logos */
 .section-logos { padding: 48px 24px; }
 .logos-label { color: var(--muted); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; text-align: center; }
